@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    
+</head>
+
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{ margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: 'Poppins',sans-serif;
+}
+
+body
+{
+    background-color: whitesmoke;
+    justify-content: center;
+    display:flex ;
+    align-items:center ;
+    min-height:100vh ;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+
+}
+
+.container .leftside
+{
+    position: relative;
+    background: #0c5070;
+    padding: 40px;
+}
+
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profiletext .imgbox
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 45%;
+}
+
+.profiletext .imgbox img
+{
+    border-radius: 55%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:initial;
+}
+
+.profiletext h2
+{
+color: #fff;
+font-size: 1.5em;
+margin-top: 20px;
+text-transform: uppercase;
+text-align: center;
+font-weight: 600;
+line-height: 1.4em ;
+}
+
+.profiletext h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo
+{
+    padding-top: 40px;
+}
+
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul
+{
+    position: relative;
+}
+
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.Edu  ul li 
+{
+    list-style-type:circle;
+}
+.Edu li
+{
+    margin-bottom: 15px;
+}
+
+.Edu h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.Edu h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.Edu h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.lang ul li
+{
+    list-style-type: none;
+
+}
+
+.lang .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.lang .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.about
+{
+    margin-bottom: 50px;
+}
+
+.container .rightside
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.skills .box
+{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+}
+
+.skills .box h4
+{
+text-transform: uppercase;
+color: #555e68;
+font-weight: 500;
+}
+
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.skills h3{
+    color: brown;
+}
+
+h6
+{
+    text-align: right;
+}
+
+.project li{
+    list-style-type:none;
+}
+
+.contactInfo a{
+    text-decoration: none;
+    border-bottom: 2px dotted white;
+}
+
+
+.project a{
+    text-decoration: none;
+    border-bottom: 2px dotted darkblue;
+}
+
+</style>
+
+
+
+
+<body>
+    <div class="container">
+        <div class="leftside">
+        <div class="profiletext">
+            <div class="imgbox">
+              <img src="Rohini_img.png">
+            </div>
+            <br>
+            <h2> ROHINI SHIRKAR <br> <span> Front-End Developer</span></h2>
+          </div>
+
+            <div class="contactInfo">
+                <h2 class="title">Contact</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+91 8291671950</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">shirkarrohini@gmail.com</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <a href="index.html" target="_blank" target="_blank">
+                            
+                        <span class="text">My Portfolio</span></a>
+                    </li>
+
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Mumbai, India</span>
+                    </li>
+                </ul>
+            </div>
+        
+            <br><br>
+
+            <div class="Edu">
+                <h2 class="title">EDUCATION</h2><br>
+                <ul>
+                    <li>
+                        <h5> 2020 - 2023</h5>
+                        <h4>Bachelor Degree in Information Technology 
+                            <br> Semester 7 (7.00 CGPA)</h4>
+                        <h4>Datta Meghe College of Engineering</h4>
+                    </li>
+                    <br>
+                    <li>
+                        <h5> 2018 - 2020</h5>
+                        <h4>Diploma in Information Technology (85%) </h4>
+                        <h4>Bharati Vidyapeeth Institute of Technology, Navi Mumbai</h4>
+                    </li>
+                    <br>
+                    <li>
+                        <h5> 2017 - 2018</h5>
+                        <h4>HSC in Science (55.55%) </h4>
+                        <h4>V.G. Vaze College </h4>
+                    </li>
+                    <br>
+                    <li>
+                        <h5> 2015 - 2016</h5>
+                        <h4>SSC (87.20 %)</h4>
+                        <h4>I.E.S.Secondary School,Bhandup</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <br><br>
+
+            <div class="lang">
+                <h2 class="title">LANGUAGES</h2>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div style="width:80%;"></div>
+                        </span>
+                   </li>
+                   <br>
+                   <li>
+                    <span class="text">Hindi</span>
+                    <span class="percent">
+                        <div style="width:90%;"></div>
+                    </span>
+                   </li>
+                   <br>
+                   <li>
+                     <span class="text">Marathi</span>
+                     <span class="percent">
+                        <div style="width:100%;"></div>
+                     </span>
+                   </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="rightside">
+            <div class="about">
+                <h2 class="title2"> PROFILE </h2>
+                <br>
+                <p> An Inquisitive IT Engineer with a goal to work in an organization where I can apply and expand my knowledge which would enable me to grow in a professional environment while fulfilling the organizational goals.</p>
+    <br>
+                    Creative Graphic Artist and Designer with talent for developing Unique Custom Artwork & Innovative Approach to idea and concept Development. Specializes in creating clean, attractive designs that are both intuitive and functional.
+                    <br> <br><p>Good Understanding of colors and hues, Attention to details, Innovative Thinker.</p>
+            </div>
+    
+                <h2 class="title2">PROJECTS</h2> <br><br>
+                <div class="project">
+                    <ul>
+                <li>
+                 <h3>1. Automatic Water Dispenser Using Arduino </h3>
+                    <p>Design and built a Water Dispenser with the help of Ultrasonic Sensor</p><br> 
+                </li>
+                <li>
+                 <h3>2. Virtual Mouse Using Hand Gesture Control </h3>
+                   <p>Using  system’s camera so can be used for Different Systems at same time with Low Cost with OpenCV</p>
+<br>
+                    <li><h3>4. Portfolio Site </h3>
+                      <p>Using  Figma </p><br>
+                   </li>
+                <li>
+                    <h3>5. Food Ordering App </h3>
+                      <p>Using  Figma </p><br>
+                </li>
+                <li>
+                    <h3>6. Flight Booking App </h3>
+                      <p>Using  Figma </p><br>
+                </li>
+                <li>
+                    <h3>7. Cosmetics Website UI Design </h3>
+                    <p>Using  Figma </p><br>
+                </li>
+
+                <a href="https://drive.google.com/drive/folders/1nPjgtH3lYJJyrB9xnp3yFLLRaWSZzyab?usp=sharing" target="_blank">
+                     <h3> <i class="fa fa-link"></i> <span>  Projects Folder Drive Link  </span></a></h3>
+                </a></h3>
+                </ul>
+
+                </div>
+
+                <br><br>
+                <div class="skills">
+                    <h2 class="title2"> PROFESSIONAL SKILLS</h2> <br><br>
+                    <div class="box"> 
+                        <h4> Html</h4> 
+                        <div class="percent">
+                            <div style="width: 90%;"></div>
+                        </div>
+                    </div>
+<br>
+                    <div class="box">
+                        <h4> Css</h4>
+                        <div class="percent">
+                            <div style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+<br>
+                    <div class="box">
+                        <h4> DataBase(SQL)</h4>
+                        <div class="percent">
+                            <div style="width: 75%;"></div>
+                        </div>
+                    </div>
+<br>
+                    <div class="box">
+                        <h4> WireFraming</h4>
+                        <div class="percent">
+                            <div style="width: 85%;"></div>
+                        </div>
+                    </div>
+<br>
+                    <div class="box">
+                        <h4> Data Analysis for Documentation</h4>
+                        <div class="percent">
+                            <div style="width: 95%;"></div>
+                        </div>
+                    </div>
+<br>
+                    <h3> UI/UX Designing course with Figma completion is in the process...</h3>
+                </div>
+        
+<br> <br>
+                <div class="certificate">
+                    <h2 class="title2"> CERTIFICATES</h2> <br>
+                    
+                    <i class="fa fa-certificate" aria-hidden="true"></i> SAP </li> <br> <br>
+                    <i class="fa fa-shield" aria-hidden="true"></i> Information Security Education Awareness (6 certificates) 
+                
+                </div>
+<br> <br> <br> <br> <br><br> <br> <br>
+                <h6> (This Resume is made with html and css) </h6>
+                <h6> Rohini Shirkar</h6>
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
